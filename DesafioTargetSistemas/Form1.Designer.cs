@@ -45,10 +45,16 @@
             groupBox3 = new GroupBox();
             btnFaturamentoMensal = new Button();
             lblFaturamentoMensal = new Label();
+            groupBox4 = new GroupBox();
+            btnInverter = new Button();
+            lblInverso = new Label();
+            label4 = new Label();
+            txtInverter = new TextBox();
             gbValorSOMA.SuspendLayout();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
+            groupBox4.SuspendLayout();
             SuspendLayout();
             // 
             // gbValorSOMA
@@ -220,11 +226,60 @@
             lblFaturamentoMensal.TabIndex = 0;
             lblFaturamentoMensal.Text = "Resposta:";
             // 
+            // groupBox4
+            // 
+            groupBox4.Controls.Add(btnInverter);
+            groupBox4.Controls.Add(lblInverso);
+            groupBox4.Controls.Add(label4);
+            groupBox4.Controls.Add(txtInverter);
+            groupBox4.Location = new Point(12, 636);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new Size(694, 142);
+            groupBox4.TabIndex = 5;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Inversor de Texto";
+            // 
+            // btnInverter
+            // 
+            btnInverter.Location = new Point(45, 77);
+            btnInverter.Name = "btnInverter";
+            btnInverter.Size = new Size(75, 23);
+            btnInverter.TabIndex = 3;
+            btnInverter.Text = "Inverter";
+            btnInverter.UseVisualStyleBackColor = true;
+            btnInverter.Click += InverterTexto;
+            // 
+            // lblInverso
+            // 
+            lblInverso.AutoSize = true;
+            lblInverso.Location = new Point(168, 53);
+            lblInverso.Name = "lblInverso";
+            lblInverso.Size = new Size(48, 15);
+            lblInverso.TabIndex = 2;
+            lblInverso.Text = "Inverso:";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(13, 24);
+            label4.Name = "label4";
+            label4.Size = new Size(147, 15);
+            label4.TabIndex = 1;
+            label4.Text = "Insira o texto para inverter:";
+            // 
+            // txtInverter
+            // 
+            txtInverter.Location = new Point(12, 49);
+            txtInverter.Name = "txtInverter";
+            txtInverter.Size = new Size(148, 23);
+            txtInverter.TabIndex = 0;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(718, 790);
+            Controls.Add(groupBox4);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
@@ -240,6 +295,8 @@
             groupBox2.PerformLayout();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
+            groupBox4.ResumeLayout(false);
+            groupBox4.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -263,5 +320,10 @@
         private GroupBox groupBox3;
         private Button btnFaturamentoMensal;
         private Label lblFaturamentoMensal;
+        private GroupBox groupBox4;
+        private Button btnInverter;
+        private Label lblInverso;
+        private Label label4;
+        private TextBox txtInverter;
     }
 }

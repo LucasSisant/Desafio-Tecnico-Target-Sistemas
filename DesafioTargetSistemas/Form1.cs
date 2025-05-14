@@ -136,5 +136,17 @@ namespace DesafioTargetSistemas
             lblFaturamentoMensal.Text = "Total Mensal: "+total+Environment.NewLine+"SP: "+percentualSP+"%;"+Environment.NewLine + "RJ: " + percentualRJ + "%;" + Environment.NewLine + "MG: " + percentualMG + "%;" + Environment.NewLine + "ES: " + percentualES + "%;" + Environment.NewLine + "OUTROS: " + percentualOutros + "%;";
             
         }
+
+        private void InverterTexto(object sender, EventArgs e)
+        {
+            string texto = txtInverter.Text;
+            string inverso = string.Empty;
+            for (int i = texto.Length; i > 0; i--)
+            {
+                inverso = inverso + texto[i - 1];
+            }
+            lblInverso.Text = inverso;
+        }
+
     }
 }
