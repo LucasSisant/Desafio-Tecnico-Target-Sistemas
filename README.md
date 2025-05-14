@@ -1,8 +1,8 @@
 <h1 align="center"> Desafio Técnico - Target Sistemas</h1>
 
 <p align="center">
-Este projeto apresenta as soluções para as questões do Desafio Técnico, uma das etapas do processo seletivo promovido pela plataforma Gupy, visando preenchimento da vaga de Desenvolvedor de Sistemas Jr. na empresa Target Sistemas. <br/>
-Consulte detalhes da vaga <a href="https://targetsistemas.gupy.io/job/eyJqb2JJZCI6OTExODA0NCwic291cmNlIjoiaW5kZWVkIn0=?jobBoardSource=indeed" target="_blank">clicando aqui.</a>
+Este projeto apresenta as soluções para as questões do Desafio Técnico, uma das etapas do processo seletivo promovido pela <a href="https://portal.gupy.io/">Gupy Recrutamento & Seleção</a>, visando preenchimento da vaga de Desenvolvedor de Sistemas Jr. na empresa <a href="https://targetsistemas.com.br/">Target Sistemas</a>. <br/>
+Veja o anúncio da vaga <a href="https://targetsistemas.gupy.io/job/eyJqb2JJZCI6OTExODA0NCwic291cmNlIjoiaW5kZWVkIn0=?jobBoardSource=indeed" target="_blank">clicando aqui.</a>
 </p>
 
 <p align="center">
@@ -24,7 +24,7 @@ Consulte detalhes da vaga <a href="https://targetsistemas.gupy.io/job/eyJqb2JJZC
 
 ## 💻 Projeto
 
-Neste projeto está a resolução para os seguintes desafios:
+Este projeto apresenta a resolução para os seguintes desafios:
 
 - Identificar o valor da variável SOMA;
 - Criar um programa para consultar se um número pertece à sequência de Fibonacci;
@@ -34,8 +34,9 @@ Neste projeto está a resolução para os seguintes desafios:
 
 ## 🚀 Tecnologias
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+Visando cumprir um dos requisitos da vaga, que era conhecimento da linguagem de programação C#, optei por desenvolver uma aplicação desktop utilizando as seguintes tecnologias:
 
+- Windows Forms;
 - C#
 - .NET
 - Git e Github
