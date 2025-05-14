@@ -39,8 +39,12 @@
             txtVerificarFibonacci = new TextBox();
             label3 = new Label();
             btnVerificarFibonacci = new Button();
+            groupBox2 = new GroupBox();
+            lblRespostaFaturamento = new Label();
+            button1 = new Button();
             gbValorSOMA.SuspendLayout();
             groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
             SuspendLayout();
             // 
             // gbValorSOMA
@@ -152,11 +156,42 @@
             btnVerificarFibonacci.UseVisualStyleBackColor = true;
             btnVerificarFibonacci.Click += VerificaFibonacci_Click;
             // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(lblRespostaFaturamento);
+            groupBox2.Controls.Add(button1);
+            groupBox2.Location = new Point(12, 339);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(694, 100);
+            groupBox2.TabIndex = 3;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Faturamento Diário da Distribuidora";
+            // 
+            // lblRespostaFaturamento
+            // 
+            lblRespostaFaturamento.AutoSize = true;
+            lblRespostaFaturamento.Location = new Point(203, 28);
+            lblRespostaFaturamento.Name = "lblRespostaFaturamento";
+            lblRespostaFaturamento.Size = new Size(57, 15);
+            lblRespostaFaturamento.TabIndex = 1;
+            lblRespostaFaturamento.Text = "Resposta:";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(17, 38);
+            button1.Name = "button1";
+            button1.Size = new Size(155, 23);
+            button1.TabIndex = 0;
+            button1.Text = "Carregar arquivo XML";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += AnaliseFaturamentoDiario;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(718, 587);
+            ClientSize = new Size(718, 790);
+            Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(label2);
             Controls.Add(gbValorSOMA);
@@ -166,6 +201,8 @@
             gbValorSOMA.PerformLayout();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -183,5 +220,8 @@
         private Label label3;
         private Button btnVerificarFibonacci;
         private Label lblRespostaFibonacci;
+        private GroupBox groupBox2;
+        private Label lblRespostaFaturamento;
+        private Button button1;
     }
 }
