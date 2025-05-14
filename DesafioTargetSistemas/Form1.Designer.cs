@@ -42,9 +42,13 @@
             groupBox2 = new GroupBox();
             lblRespostaFaturamento = new Label();
             button1 = new Button();
+            groupBox3 = new GroupBox();
+            btnFaturamentoMensal = new Button();
+            lblFaturamentoMensal = new Label();
             gbValorSOMA.SuspendLayout();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
+            groupBox3.SuspendLayout();
             SuspendLayout();
             // 
             // gbValorSOMA
@@ -186,11 +190,42 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += AnaliseFaturamentoDiario;
             // 
+            // groupBox3
+            // 
+            groupBox3.Controls.Add(btnFaturamentoMensal);
+            groupBox3.Controls.Add(lblFaturamentoMensal);
+            groupBox3.Location = new Point(12, 457);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(694, 164);
+            groupBox3.TabIndex = 4;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Faturamento Mensal por Estado";
+            // 
+            // btnFaturamentoMensal
+            // 
+            btnFaturamentoMensal.Location = new Point(17, 28);
+            btnFaturamentoMensal.Name = "btnFaturamentoMensal";
+            btnFaturamentoMensal.Size = new Size(155, 23);
+            btnFaturamentoMensal.TabIndex = 1;
+            btnFaturamentoMensal.Text = "Ver Percentual";
+            btnFaturamentoMensal.UseVisualStyleBackColor = true;
+            btnFaturamentoMensal.Click += CalculaPercentualPorEstado;
+            // 
+            // lblFaturamentoMensal
+            // 
+            lblFaturamentoMensal.AutoSize = true;
+            lblFaturamentoMensal.Location = new Point(176, 30);
+            lblFaturamentoMensal.Name = "lblFaturamentoMensal";
+            lblFaturamentoMensal.Size = new Size(57, 15);
+            lblFaturamentoMensal.TabIndex = 0;
+            lblFaturamentoMensal.Text = "Resposta:";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(718, 790);
+            Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(label2);
@@ -203,6 +238,8 @@
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -223,5 +260,8 @@
         private GroupBox groupBox2;
         private Label lblRespostaFaturamento;
         private Button button1;
+        private GroupBox groupBox3;
+        private Button btnFaturamentoMensal;
+        private Label lblFaturamentoMensal;
     }
 }

@@ -128,6 +128,13 @@ namespace DesafioTargetSistemas
 
         }
 
-
+        private void CalculaPercentualPorEstado(object sender, EventArgs e)
+        {
+            double total = 0, sp = 67836.43f, rj = 36678.66f, mg = 29229.88f, es = 27165.48f, outros = 19849.53f;
+            total = Math.Round( sp + rj + mg + es + outros,2);
+            double percentualSP = Math.Round((sp/total)*100,2), percentualRJ = Math.Round((rj / total) * 100, 2), percentualMG = Math.Round((mg / total) * 100, 2), percentualES = Math.Round((es / total) * 100, 2), percentualOutros = Math.Round((outros / total) * 100, 2);
+            lblFaturamentoMensal.Text = "Total Mensal: "+total+Environment.NewLine+"SP: "+percentualSP+"%;"+Environment.NewLine + "RJ: " + percentualRJ + "%;" + Environment.NewLine + "MG: " + percentualMG + "%;" + Environment.NewLine + "ES: " + percentualES + "%;" + Environment.NewLine + "OUTROS: " + percentualOutros + "%;";
+            
+        }
     }
 }
